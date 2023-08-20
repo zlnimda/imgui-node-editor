@@ -164,7 +164,7 @@ void ImGuiEx::Canvas::End()
 
     ImGui::GetCurrentWindow()->DC.CursorMaxPos = m_WindowCursorMaxBackup;
 
-    ImGui::SetItemAllowOverlap();
+    ImGui::SetNextItemAllowOverlap();
 
     // Emit dummy widget matching bounds of the canvas.
     ImGui::SetCursorScreenPos(m_WidgetPosition);

@@ -29,12 +29,12 @@ inline bool operator!=(const ImVec2& lhs, const ImVec2& rhs)
     return lhs.x != rhs.x || lhs.y != rhs.y;
 }
 
-#ifndef IMGUI_DEFINE_MATH_OPERATORS_IMPLEMENTED
 inline ImVec2 operator*(const float lhs, const ImVec2& rhs)
 {
     return ImVec2(lhs * rhs.x, lhs * rhs.y);
 }
 
+#ifndef IMGUI_DEFINE_MATH_OPERATORS_IMPLEMENTED
 inline static ImVec2 operator-(const ImVec2& lhs)
 {
     return ImVec2(-lhs.x, -lhs.y);
